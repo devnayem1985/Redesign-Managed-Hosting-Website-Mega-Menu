@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corefinity - Premium Managed Hosting Solutions</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-primary">Corefinity</div>
+                </div>
+                
+                <nav class="hidden lg:flex space-x-8">
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">
+                            Solutions
+                            <div class="w-4 h-4 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-down-s-line text-sm"></i>
+                            </div>
+                        </button>
+                        <div class="absolute top-full left-0 w-screen max-w-4xl bg-white shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="p-8">
+                                <div class="grid grid-cols-3 gap-8">
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-gray-900 mb-4">E-commerce Platforms</h3>
+                                        <ul class="space-y-3">
+                                            <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Magento Hosting</a></li>
+                                            <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">WooCommerce Hosting</a></li>
+                                            <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Shopify Plus</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-gray-900 mb-4">Development Frameworks</h3>
+                                        <ul class="space-y-3">
+                                            <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Laravel Hosting</a></li>
+                                            <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">WordPress Hosting</a></li>
+                                            <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Custom Applications</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-gray-900 mb-4">Enterprise Solutions</h3>
+                                        <ul class="space-y-3">
+                                            <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Dedicated Servers</a></li>
+                                            <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Cloud Infrastructure</a></li>
+                                            <li><a href="#" class="text-sm text-gray-600 hover:text-primary transition-colors">Managed Services</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Services</a>
+                    <a href="#" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Agency</a>
+                    <a href="#" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Support</a>
+                    <a href="#" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Company</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-primary text-sm font-medium transition-colors duration-200">Login</a>
+                    <button class="bg-primary text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-secondary transition-colors duration-200 whitespace-nowrap">
+                        Get Started
+                    </button>
+                </div>
+
+                <button class="lg:hidden p-2">
+                    <div class="w-6 h-6 flex items-center justify-center">
+                        <i class="ri-menu-line text-xl"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-50 to-indigo-100 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20data%20center%20servers%20with%20clean%20white%20background%2C%20professional%20technology%20infrastructure%2C%20minimalist%20design%20with%20soft%20lighting%20and%20geometric%20patterns%2C%20high-tech%20environment%20with%20blue%20accent%20lighting%2C%20contemporary%20digital%20workspace%20atmosphere&width=1920&height=1080&seq=hero-bg-001&orientation=landscape')"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Premium Managed 
+                        <span class="text-primary">Hosting Solutions</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Experience enterprise-grade hosting with 99.9% uptime guarantee, lightning-fast performance, and 24/7 expert support for your mission-critical applications.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-secondary transition-colors duration-200 whitespace-nowrap">
+                            Start Free Trial
+                        </button>
+                        <button class="border-2 border-primary text-primary px-8 py-4 !rounded-button text-lg font-semibold hover:bg-primary hover:text-white transition-colors duration-200 whitespace-nowrap">
+                            View Solutions
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=Modern%20server%20infrastructure%20dashboard%20with%20clean%20interface%2C%20professional%20technology%20monitoring%20screens%2C%20minimalist%20design%20with%20blue%20and%20white%20color%20scheme%2C%20high-tech%20data%20visualization%2C%20contemporary%20digital%20workspace%20with%20geometric%20elements%20and%20soft%20shadows&width=600&height=400&seq=hero-img-001&orientation=landscape" 
+                         alt="Hosting Infrastructure" 
+                         class="w-full h-auto rounded-xl shadow-2xl object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Trusted by Industry Leaders</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
+                <div class="flex items-center justify-center h-12">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-car-line text-2xl text-gray-400"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium">Mercedes</span>
+                </div>
+                <div class="flex items-center justify-center h-12">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-train-line text-2xl text-gray-400"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium">TFL</span>
+                </div>
+                <div class="flex items-center justify-center h-12">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-football-line text-2xl text-gray-400"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium">LCFC</span>
+                </div>
+                <div class="flex items-center justify-center h-12">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-shopping-bag-line text-2xl text-gray-400"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium">JML</span>
+                </div>
+                <div class="flex items-center justify-center h-12">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-bike-line text-2xl text-gray-400"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium">Ribble Cycles</span>
+                </div>
+                <div class="flex items-center justify-center h-12">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-gem-line text-2xl text-gray-400"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium">T.H. Baker</span>
+                </div>
+                <div class="flex items-center justify-center h-12">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-fish-line text-2xl text-gray-400"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium">Angling Direct</span>
+                </div>
+                <div class="flex items-center justify-center h-12">
+                    <div class="w-6 h-6 flex items-center justify-center mr-2">
+                        <i class="ri-store-line text-2xl text-gray-400"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium">Peter Tyson</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Why Choose Corefinity Hosting?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Built for performance, designed for scale. Our managed hosting solutions deliver the reliability and speed your business demands.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-6">
+                        <i class="ri-speed-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Lightning Fast Performance</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Experience blazing-fast load times with our optimized infrastructure, SSD storage, and global CDN network.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-6">
+                        <i class="ri-shield-check-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Enterprise Security</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Advanced security measures including SSL certificates, DDoS protection, and regular security updates.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-6">
+                        <i class="ri-customer-service-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">24/7 Expert Support</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Round-the-clock support from hosting experts who understand your platform and business needs.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-6">
+                        <i class="ri-cloud-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Scalable Infrastructure</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Automatically scale resources up or down based on your traffic demands with our cloud infrastructure.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-6">
+                        <i class="ri-refresh-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Automated Backups</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Daily automated backups with one-click restore functionality to keep your data safe and secure.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-6">
+                        <i class="ri-settings-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Fully Managed</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Focus on your business while we handle server management, updates, and maintenance tasks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Hosting Solutions for Every Platform
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Specialized hosting optimized for your favorite platforms and frameworks.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200">
+                    <div class="h-48 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
+                        <div class="w-16 h-16 flex items-center justify-center bg-white rounded-lg">
+                            <i class="ri-shopping-cart-line text-3xl text-orange-500"></i>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Magento Hosting</h3>
+                        <p class="text-gray-600 mb-6">
+                            Optimized for Magento with pre-configured caching, CDN, and performance monitoring.
+                        </p>
+                        <button class="text-primary font-semibold hover:text-secondary transition-colors duration-200">
+                            Learn More →
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200">
+                    <div class="h-48 bg-gradient-to-br from-red-400 to-pink-500 flex items-center justify-center">
+                        <div class="w-16 h-16 flex items-center justify-center bg-white rounded-lg">
+                            <i class="ri-code-box-line text-3xl text-red-500"></i>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Laravel Hosting</h3>
+                        <p class="text-gray-600 mb-6">
+                            Perfect environment for Laravel applications with optimized PHP configuration and deployment tools.
+                        </p>
+                        <button class="text-primary font-semibold hover:text-secondary transition-colors duration-200">
+                            Learn More →
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center">
+                        <div class="w-16 h-16 flex items-center justify-center bg-white rounded-lg">
+                            <i class="ri-wordpress-line text-3xl text-blue-500"></i>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">WordPress Hosting</h3>
+                        <p class="text-gray-600 mb-6">
+                            Managed WordPress hosting with automatic updates, security, and performance optimization.
+                        </p>
+                        <button class="text-primary font-semibold hover:text-secondary transition-colors duration-200">
+                            Learn More →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold text-white mb-2">99.9%</div>
+                    <div class="text-blue-100 text-lg">Uptime Guarantee</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold text-white mb-2">24/7</div>
+                    <div class="text-blue-100 text-lg">Expert Support</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold text-white mb-2">500+</div>
+                    <div class="text-blue-100 text-lg">Happy Clients</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold text-white mb-2">10+</div>
+                    <div class="text-blue-100 text-lg">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    What Our Clients Say
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                            JS
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">James Sullivan</div>
+                            <div class="text-gray-600 text-sm">CTO, TechCorp</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        "Corefinity's managed hosting has been a game-changer for our e-commerce platform. The performance improvements and support quality are outstanding."
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                            MR
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Maria Rodriguez</div>
+                            <div class="text-gray-600 text-sm">Founder, Digital Agency</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        "The migration process was seamless, and our site performance has never been better. Their team truly understands enterprise hosting needs."
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                            DK
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">David Kim</div>
+                            <div class="text-gray-600 text-sm">E-commerce Director</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        "24/7 support that actually knows what they're talking about. Corefinity has exceeded our expectations in every way."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+                Ready to Experience Premium Hosting?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Join hundreds of successful businesses who trust Corefinity for their hosting needs. Start your free trial today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary px-8 py-4 !rounded-button text-lg font-semibold hover:bg-gray-100 transition-colors duration-200 whitespace-nowrap">
+                    Start Free Trial
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200 whitespace-nowrap">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">Corefinity</div>
+                    <p class="text-gray-400 mb-6">
+                        Premium managed hosting solutions for businesses that demand excellence.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded hover:bg-primary transition-colors duration-200 cursor-pointer">
+                            <i class="ri-twitter-line"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded hover:bg-primary transition-colors duration-200 cursor-pointer">
+                            <i class="ri-linkedin-line"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded hover:bg-primary transition-colors duration-200 cursor-pointer">
+                            <i class="ri-facebook-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Solutions</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Magento Hosting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Laravel Hosting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">WordPress Hosting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Dedicated Servers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Agency Program</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Status Page</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2024 Corefinity. All rights reserved.
+                    </div>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mega-menu-functionality">
+        document.addEventListener('DOMContentLoaded', function() {
+            const megaMenuTrigger = document.querySelector('.group');
+            const megaMenuDropdown = megaMenuTrigger.querySelector('.absolute');
+            
+            let timeoutId;
+            
+            megaMenuTrigger.addEventListener('mouseenter', function() {
+                clearTimeout(timeoutId);
+                megaMenuDropdown.classList.remove('opacity-0', 'invisible');
+                megaMenuDropdown.classList.add('opacity-100', 'visible');
+            });
+            
+            megaMenuTrigger.addEventListener('mouseleave', function() {
+                timeoutId = setTimeout(() => {
+                    megaMenuDropdown.classList.remove('opacity-100', 'visible');
+                    megaMenuDropdown.classList.add('opacity-0', 'invisible');
+                }, 150);
+            });
+        });
+    </script>
+
+    <script id="mobile-menu-functionality">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.lg\\:hidden');
+            const mobileMenuIcon = mobileMenuButton.querySelector('i');
+            
+            let mobileMenuOpen = false;
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenuOpen = !mobileMenuOpen;
+                
+                if (mobileMenuOpen) {
+                    mobileMenuIcon.className = 'ri-close-line text-xl';
+                } else {
+                    mobileMenuIcon.className = 'ri-menu-line text-xl';
+                }
+            });
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = 'N1Mo1gAVeoIKOFv8zOAuaw';
+    window.host = 'readdy.ai';
+</script>
+</body>
+</html>
